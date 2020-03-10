@@ -1,5 +1,5 @@
 {
-  "name": "library-workspace",
+  "name": "@me-component/ng-preloader",
   "version": "0.0.0",
   "scripts": {
     "watch": "ng build ng-preloader --watch",
