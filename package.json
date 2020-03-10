@@ -8,7 +8,11 @@
     "package": "npm run build && npm run pack",
     "start": "ng serve app-test"
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/me-component/ng-preloader.git"
+  },
+  "private": false,
   "dependencies": {
     "@angular/animations": "~8.0.1",
     "@angular/common": "~8.0.1",
