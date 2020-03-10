@@ -4,7 +4,7 @@
   "scripts": {
     "watch": "ng build ng-preloader --watch",
     "build": "ng build ng-preloader",
-    "pack": "cd dist/ng-preloader & npm pack npm publish",
+    "pack": "cd dist/ng-preloader & npm pack & npm publish",
     "package": "npm run build && npm run pack",
     "start": "ng serve app-test"
   },

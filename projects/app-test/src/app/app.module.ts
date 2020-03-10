@@ -2,15 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {NgPreloaderModule} from '../../../ng-preloader/src/lib/ng-preloader.module';
+import {NgPreloaderModule} from '../../../ng-preloader/src/ng-preloader.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
-    NgPreloaderModule
+    NgPreloaderModule.withParams({errorFunc: (msg) => {alert(msg)}})
   ],
   providers: [],
   bootstrap: [AppComponent]
